@@ -1,0 +1,366 @@
+html, body {
+    height: 100%;
+    width: 100%; /* Mengatur tinggi body menjadi 100% */
+    display: flex; /* Menggunakan flexbox */
+    flex-direction: column; /* Mengatur arah kolom */
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #bbb;
+    margin: 0; 
+    padding: 0;
+    background-image: url('DALL·E 2024-10-27 18.24.48 - A seamless batik megamendung design for a relaxing HTML background, featuring soft tones of blue, white, and grey. The pattern should incorporate trad.webp');    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex: 1;
+}
+h2 {
+    text-align: center;
+}
+h6 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* Styling Navbar */
+.logo {
+    background-color: #10b3be;
+    text-align: right;
+    padding-bottom: 10px;
+}
+nav {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #d0f0fd;
+    padding-bottom: 10px;
+    display: flex; 
+    align-items: center; 
+}
+.container-fluid {
+    background-color: #10b3be;
+    padding: 5px;
+}
+nav div a:hover {
+    background-color: #d0f0fd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+    margin-top: 10px;
+}
+
+
+
+/* Styling Search */
+.custom-btn {
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.custom-btn img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* Styling Profil */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.profil-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Ubah menjadi flex-start untuk rata atas */
+    padding: 20px;
+    text-align: justify;
+}
+
+.profil-section h2 {
+    font-size: 30px;
+}
+
+.profil-text {
+    position: relative; /* Memungkinkan penggunaan transform */
+    transition: transform 0.4s ease; /* Transisi transformasi */
+    background-color: rgba(255, 255, 255, 0.8); /* Memperbaiki transparansi untuk keterbacaan */
+    height: auto; /* Biarkan tinggi otomatis sesuai konten */
+    width: 50%; 
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 20px;
+    border-radius: 5px; /* Sudut melengkung untuk estetika */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan untuk efek kedalaman */
+}
+.profil-text:hover {
+    transform: translateX(20px); /* Menggeser elemen 20px ke kanan saat di-hover */
+}
+
+.carousel-item {
+    transition: transform 0.2s ease-in-outs;
+    width: 90%;
+    -webkit-transition: transform 0.2s ease;
+    -moz-transition: transform 0.2s ease;
+    -ms-transition: transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
+    transform: translateX(100%);
+}
+.custom-carousel-img {
+    width: 100%; /* Lebar gambar 100% dari kontainer */
+    height: 250px; /* Sesuaikan tinggi sesuai kebutuhan */
+    object-fit: cover; /* Memastikan gambar terpotong dan mengisi area */
+    margin: auto; /* Pusatkan gambar */
+    display: block; /* Gambar sebagai elemen blok */
+}
+.carousel-item.active {
+    opacity: 1; /* Gambar aktif menjadi terlihat */
+    transform: translateX(0); /* Pindah ke posisi normal */
+}
+.carousel-item-next,.carousel-item-prev {
+    opacity: 1; /* Pastikan gambar berikutnya dan sebelumnya terlihat */
+    transform: translateX(0); /* Pindah ke posisi normal */
+}
+.carousel-item-next {
+    transform: translateX(100%); /* Pindah dari kanan */
+}
+.carousel-item-prev {
+    transform: translateX(-100%); /* Pindah dari kiri */
+}
+
+
+
+
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .profil-section {
+        flex-direction: column; /* Mengubah arah menjadi kolom pada layar kecil */
+        align-items: center; /* Rata tengah secara horizontal */
+    }
+
+    .profil-text {
+        width: 90%; /* Lebar lebih besar pada layar kecil */
+        margin-right: 0; /* Menghapus margin kanan */
+        margin-bottom: 20px; /* Margin bawah untuk pemisahan */
+    }
+
+    .profil-section img {
+        width: 100%; /* Membuat gambar responsif */
+        height: auto; /* Biarkan tinggi otomatis */
+    }
+}
+
+
+
+
+/* Styling Form */
+.label {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+.message {
+    display: inline-block;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    resize: vertical; 
+}
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+form {
+    max-width: 600px;
+    margin-left: 5%;
+    padding: 20px;
+}
+
+
+
+/* Styling Button Submit */
+.inputButton {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 20%;
+    margin-top: 10px;
+}
+.inputButton:hover {
+    background-color: #0056b3;
+}
+.iti {
+    width: 100%;
+}
+
+
+
+/* Styling Kode Telp Negara */
+.iti--allow-dropdown input {
+    padding-left: 58px;
+}
+
+
+
+/* Styling Nama Negara */
+.country-select {
+    position: relative;
+    width: 100%; 
+    margin: 10px 0;
+}
+.country-select select {
+    width: 100%; 
+    padding-bottom: 12px;
+    padding-right: 30px;
+    appearance: none;
+}
+
+
+
+/* Styling Panah */
+.arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+
+/* Styling Login */
+.login {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: darkslategrey;
+    max-width: 25%;
+    margin: 50px auto 20px;
+}
+.inputLogin {
+    margin: 30px;
+    width: 70%;
+    display: inline-block;
+    background-color: #10b3be;
+    color: #fdfcfc;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    transition: background-color 0.3s ease;
+}
+.inputLogin:hover {
+    background-color: #040404;
+}
+
+
+
+/* Styling Login Google */
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    padding: 12px;
+    margin: 0px auto;
+    background-color: #4285F4; /* Warna khas Google */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.login-button:hover {
+    background-color: #357AE8;
+}
+.login-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+/* Styling Footer */
+footer {
+    background-color: #222;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #fff;
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #00f,
+        0 0 20px #00f;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    margin-top: auto; 
+}
+footer p {
+    margin: 5px 0;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 768px) {
+    /* Style untuk layar tablet dan ponsel */
+}
+
+@media (max-width: 480px) {
+    /* Style khusus untuk layar ponsel kecil */
+}

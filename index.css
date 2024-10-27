@@ -1,0 +1,61 @@
+nav {
+    background-color: #d0f0fd;
+    padding: 10px;
+    display: flex; /* Menyusun item navbar secara fleksibel */
+    align-items: center; /* Mengatur item secara vertikal */
+}
+img{
+    padding-bottom: 10px;
+}
+/* Atur tampilan tombol pencarian */
+.custom-btn {
+    padding: 0;
+    width: 35px; /* Sesuaikan dengan ukuran ikon */
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-btn img {
+    padding-bottom: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+.container-fluid{
+    background-color: #10b3be;
+    padding: 5px;
+}
+nav div a:hover{
+    background-color: #d0f0fd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 8%;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    width: 100%;
+    margin-top: auto; 
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
