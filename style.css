@@ -138,29 +138,6 @@ nav div a:hover {
 
 
 
-
-/* Responsivitas */
-@media (max-width: 768px) {
-    .profil-section {
-        flex-direction: column; /* Mengubah arah menjadi kolom pada layar kecil */
-        align-items: center; /* Rata tengah secara horizontal */
-    }
-
-    .profil-text {
-        width: 90%; /* Lebar lebih besar pada layar kecil */
-        margin-right: 0; /* Menghapus margin kanan */
-        margin-bottom: 20px; /* Margin bawah untuk pemisahan */
-    }
-
-    .profil-section img {
-        width: 100%; /* Membuat gambar responsif */
-        height: auto; /* Biarkan tinggi otomatis */
-    }
-}
-
-
-
-
 /* Styling Form */
 .label {
     display: inline-block;
