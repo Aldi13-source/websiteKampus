@@ -128,13 +128,6 @@ nav div a:hover {
     opacity: 1; /* Pastikan gambar berikutnya dan sebelumnya terlihat */
     transform: translateX(0); /* Pindah ke posisi normal */
 }
-.carousel-item-next {
-    transform: translateX(100%); /* Pindah dari kanan */
-}
-.carousel-item-prev {
-    transform: translateX(-100%); /* Pindah dari kiri */
-}
-
 
 
 
