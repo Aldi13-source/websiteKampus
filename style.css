@@ -97,13 +97,15 @@ nav div a:hover {
     margin-right: 20px;
     border-radius: 5px; /* Sudut melengkung untuk estetika */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan untuk efek kedalaman */
+    box-sizing: border-box; /* Memastikan padding tidak mengubah ukuran */
 }
 .profil-text:hover {
     transform: translateX(20px); /* Menggeser elemen 20px ke kanan saat di-hover */
+    transition: transform 0.2s ease; /* Menambahkan transisi halus */
 }
 
 .carousel-item {
-    transition: transform 0.2s ease-in-outs;
+    transition: transform 0.2s ease-in-out;
     width: 90%;
     -webkit-transition: transform 0.2s ease;
     -moz-transition: transform 0.2s ease;
@@ -351,14 +353,4 @@ footer a {
 }
 footer a:hover {
     text-decoration: underline;
-}
-
-
-
-@media (max-width: 768px) {
-    /* Style untuk layar tablet dan ponsel */
-}
-
-@media (max-width: 480px) {
-    /* Style khusus untuk layar ponsel kecil */
 }
