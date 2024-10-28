@@ -114,7 +114,7 @@ nav div a:hover {
     transform: translateX(100%);
 }
 .custom-carousel-img {
-    width: 100%; /* Lebar gambar 100% dari kontainer */
+    width: 90%; /* Lebar gambar 100% dari kontainer */
     height: 250px; /* Sesuaikan tinggi sesuai kebutuhan */
     object-fit: cover; /* Memastikan gambar terpotong dan mengisi area */
     margin: auto; /* Pusatkan gambar */
